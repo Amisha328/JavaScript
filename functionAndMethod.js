@@ -134,4 +134,41 @@ console.log("90+ marks: ", topper);
 
 // taking input in array:
 
-let size = prompt("Enter the size of the array");
+/*
+let size = prompt("Enter size of array");
+var inputArr = [];
+for(let idx = 0; idx < size; idx++){
+    inputArr[idx] = prompt("Enter element of array:",idx);
+}
+
+console.log("Input array by user is: ")
+console.log(inputArr);
+*/
+
+// Question: Given a number n as input from user. create an array of elements from 1 to n.
+
+let n = prompt("Enter a number:")
+let userArray = [];
+
+for(let i = 0; i < n; i++){
+    userArray[i] = i+1;
+}
+// Use reduce method to calculate sum of all the numbers in the array.
+// Method 1;
+// if we do n+1 it will conver it into string like : if n = 5 and we do n+1 it will become 51
+console.log(`Sum of all the numbers is array: ${n * (++n)/2}`);
+
+// Method 2:
+let totalSum = userArray.reduce((sum, curr) =>{
+    return sum + curr;
+})
+
+console.log("Sum of all elements in array using reduce() is: ", totalSum);
+
+// Use reduce method to calculate product of all the numbers in the array.
+
+let totalProd = userArray.reduce((prod, curr) =>{
+    return prod * curr;
+})
+
+console.log("Product of all elements in array using reduce() is: ", totalProd);
