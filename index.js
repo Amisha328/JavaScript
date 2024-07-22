@@ -101,7 +101,54 @@ let username = `@${fullName}${fullName.length}`;
 console.log("Username is: ", username);
 */
 
+// DOM - Document Object Model
 
+// let div = document.querySelector("div");
+// console.log(div);
+
+// let id = div.getAttribute("id");
+// console.log(id);
+
+// div.style.backgroundColor = "purple"
+
+// let para = document.querySelector("p");
+// let attr = para.getAttribute("class");
+// console.log(attr)
+
+// attr = para.setAttribute("class", "newClass")
+
+/*
+let newBtn = document.createElement("button");
+newBtn.innerHTML = "click me!!"
+console.log(newBtn);
+let div = document.querySelector("div");
+// div.append(newBtn); // add at the end of node(inside)
+// div.prepend(newBtn); // add at the start of node (inside)
+// div.before(newBtn) // add before the node(outside)
+div.after(newBtn) // add after the node (outside)
+
+
+let newHeading = document.createElement("h1");
+newHeading.innerHTML = "<i>This is the new heading</i>"
+
+document.querySelector("body").prepend(newHeading);
+
+
+let para = document.querySelector("p");
+para.remove();
+
+*/
+
+
+let newBtn = document.createElement("button");
+newBtn.innerText = "click me"
+newBtn.style.backgroundColor = "red"
+newBtn.style.color = "white";
+
+document.querySelector('body').prepend(newBtn);
+//classList
+let para = document.querySelector("p");
+para.classList.add("newClass");
 
 
 
